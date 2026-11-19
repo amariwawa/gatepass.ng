@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    background: #F6F3EC;
+    color: #0F1B2D;
+    font-family: var(--font-inter), Inter, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a {
+    color: #0F1B2D;
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+  a:hover {
+    color: #1F5F46;
+  }
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #0F1B2D !important;
+  }
+}
+
+@layer components {
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    box-sizing: border-box;
+  }
+  .h {
+    font-family: var(--font-newsreader), Newsreader, Georgia, serif;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0 28px;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: var(--font-inter), Inter, sans-serif;
+    background: #0F1B2D;
+    color: #F6F3EC;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease;
+    box-sizing: border-box;
+  }
+  .btn:hover {
+    background: #1F5F46;
+    color: #F6F3EC;
+  }
+  .btn2, .btn-ghost {
+    background: transparent;
+    color: #0F1B2D;
+    border: 1px solid #C9C3B3;
+  }
+  .btn2:hover, .btn-ghost:hover {
+    background: #EDE8DC;
+    color: #0F1B2D;
+  }
+  .card {
+    background: #FFFFFF;
+    border: 1px solid #E2DDD1;
+    border-radius: 16px;
+    padding: 32px;
+    box-sizing: border-box;
+  }
+  .lbl {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #1F5F46;
+  }
+  .mut {
+    color: #5B6472;
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  .fl {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .inp {
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    border: 1px solid #C9C3B3;
+    border-radius: 10px;
+    padding: 0 14px;
+    background: #fff;
+    font-size: 15px;
+    font-family: var(--font-inter), Inter, sans-serif;
+    color: #0F1B2D;
+  }
+  .row {
+    display: grid;
+    gap: 16px;
+  }
+  .chk {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  .chk input {
+    width: 20px;
+    height: 20px;
+    accent-color: #1F5F46;
+    cursor: pointer;
+  }
+  .qty {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #C9C3B3;
+    background: #fff;
+    font-size: 20px;
+    color: #0F1B2D;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s ease;
+  }
+  .qty:hover:not(:disabled) {
+    background: #EDE8DC;
+  }
+  .qty:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  .pill {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #C9C3B3;
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 15px;
+    background: #fff;
+    cursor: pointer;
+  }
+  .pill input {
+    width: 18px;
+    height: 18px;
+    accent-color: #1F5F46;
+    cursor: pointer;
+  }
+  .grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .qr {
+    width: 104px;
+    height: 104px;
+    border-radius: 6px;
+    background: repeating-conic-gradient(#0F1B2D 0 25%, #F6F3EC 0 50%) 0 0/13px 13px;
+    border: 6px solid #F6F3EC;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 860px) {
+  .grid3, .grid2, .hero {
+    grid-template-columns: 1fr !important;
+  }
+  .navl {
+    display: none !important;
+  }
+  .big {
+    font-size: 48px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .two, .shell {
+    grid-template-columns: 1fr !important;
+  }
+  .side {
+    display: none !important;
+  }
+  .t4 {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}

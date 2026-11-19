@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gatepass — Create your event</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F3EC;color:#0F1B2D;font-family:Inter,sans-serif}
+a{color:#0F1B2D;text-decoration:none}a:hover{color:#1F5F46}
+.h{font-family:Newsreader,Georgia,serif;margin:0;font-weight:400;letter-spacing:-0.025em}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 28px;border-radius:999px;font:500 15px Inter,sans-serif;background:#0F1B2D;color:#F6F3EC;border:0;cursor:pointer}
+.btn:hover{background:#1F5F46}
+.btn2{background:transparent;color:#0F1B2D;border:1px solid #C9C3B3}.btn2:hover{background:#EDE8DC}
+.card{background:#fff;border:1px solid #E2DDD1;border-radius:16px;padding:28px}
+.lbl{font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#1F5F46}
+.mut{color:#5B6472;line-height:1.6;font-size:15px}
+.fl{display:block;font-size:13px;font-weight:500;margin-bottom:6px}
+.inp{width:100%;height:48px;box-sizing:border-box;border:1px solid #C9C3B3;border-radius:10px;padding:0 14px;background:#fff;font:15px Inter,sans-serif;color:#0F1B2D}
+.row{display:grid;gap:16px}
+.chk{display:flex;align-items:center;gap:12px;font-size:15px;padding:10px 0}
+.chk input{width:20px;height:20px;accent-color:#1F5F46}
+.qty{width:44px;height:44px;border-radius:50%;border:1px solid #C9C3B3;background:#fff;font-size:20px;color:#0F1B2D;cursor:pointer}
+.pill{display:flex;align-items:center;gap:12px;border:1px solid #C9C3B3;border-radius:12px;padding:14px 16px;font-size:15px;background:#fff}
+.pill input{width:18px;height:18px;accent-color:#1F5F46}
+@media (max-width:900px){.two,.shell{grid-template-columns:1fr!important}.side{display:none}.t4{grid-template-columns:1fr 1fr!important}}
+</style>
+</head>
+<body>
+<div class="shell" style="display:grid;grid-template-columns:240px 1fr;min-height:1300px">
+
+<div class="side" style="background:#0F1B2D;color:#F6F3EC;padding:32px 24px;box-sizing:border-box">
+<div class="h" style="font-size:26px;margin-bottom:40px;color:#F6F3EC">Gatepass</div>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:15px">
+<a href="#" style="background:#1D2B43;color:#F6F3EC;padding:12px 14px;border-radius:10px">Events</a>
+<a href="#" style="color:#B8C2D1;padding:12px 14px">Orders</a>
+<a href="#" style="color:#B8C2D1;padding:12px 14px">Attendees</a>
+<a href="#" style="color:#B8C2D1;padding:12px 14px">Scanners</a>
+<a href="#" style="color:#B8C2D1;padding:12px 14px">Payouts</a>
+<a href="#" style="color:#B8C2D1;padding:12px 14px">Settings</a>
+</div>
+</div>
+
+<div style="padding:40px 48px;box-sizing:border-box">
+<div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px">
+<div><div class="lbl">New event</div><h1 class="h" style="font-size:48px;margin-top:10px">Create your event</h1></div>
+<div style="display:flex;gap:12px"><a href="#" class="btn btn2">Save draft</a><a href="#" class="btn">Publish event</a></div>
+</div>
+<div style="display:flex;gap:28px;margin:32px 0;font-size:14px;font-weight:500;flex-wrap:wrap">
+<span style="border-bottom:2px solid #0F1B2D;padding-bottom:8px">1 Details</span><span style="color:#5B6472;padding-bottom:8px">2 Tickets</span><span style="color:#5B6472;padding-bottom:8px">3 Payout</span><span style="color:#5B6472;padding-bottom:8px">4 Publish</span>
+</div>
+
+<div class="two" style="display:grid;grid-template-columns:1fr 340px;gap:24px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:24px">
+
+<div class="card"><h2 class="h" style="font-size:28px;margin-bottom:20px">Event details</h2>
+<div class="row">
+<div><label class="fl" for="n">Event name</label><input id="n" class="inp" value="Rooftop Sessions: December Edition"></div>
+<div class="row" style="grid-template-columns:1fr 1fr"><div><label class="fl" for="d">Date</label><input id="d" class="inp" value="20 Dec 2026"></div><div><label class="fl" for="t">Doors open</label><input id="t" class="inp" value="6:00 PM"></div></div>
+<div><label class="fl" for="v">Venue</label><input id="v" class="inp" value="Victoria Island, Lagos"></div>
+<div><label class="fl" for="x">Description</label><textarea id="x" class="inp" style="height:96px;padding:12px 14px">An evening of live sets and good company above the city.</textarea></div>
+</div></div>
+
+<div class="card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px"><h2 class="h" style="font-size:28px">Tickets</h2><a href="#" class="btn btn2" style="min-height:40px">Add tier</a></div>
+<div class="row t4" style="grid-template-columns:2fr 1fr 1fr 1fr;font-size:12px;font-weight:600;letter-spacing:0.1em;color:#5B6472;margin-bottom:8px"><span>TIER</span><span>PRICE (₦)</span><span>QUANTITY</span><span>SALES END</span></div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div class="row t4" style="grid-template-columns:2fr 1fr 1fr 1fr"><input class="inp" aria-label="Tier name" value="Early Bird"><input class="inp" aria-label="Price" value="10,000"><input class="inp" aria-label="Quantity" value="100"><input class="inp" aria-label="Sales end" value="1 Dec"></div>
+<div class="row t4" style="grid-template-columns:2fr 1fr 1fr 1fr"><input class="inp" aria-label="Tier name" value="General Admission"><input class="inp" aria-label="Price" value="15,000"><input class="inp" aria-label="Quantity" value="400"><input class="inp" aria-label="Sales end" value="20 Dec"></div>
+<div class="row t4" style="grid-template-columns:2fr 1fr 1fr 1fr"><input class="inp" aria-label="Tier name" value="VIP Table"><input class="inp" aria-label="Price" value="50,000"><input class="inp" aria-label="Quantity" value="30"><input class="inp" aria-label="Sales end" value="20 Dec"></div>
+</div></div>
+
+<div class="card"><h2 class="h" style="font-size:28px;margin-bottom:8px">Sales settings</h2>
+<label class="chk"><input type="checkbox" checked> Deliver tickets to WhatsApp and email</label>
+<label class="chk"><input type="checkbox" checked> Accept bank transfer, USSD, cards and Apple Pay</label>
+<label class="chk"><input type="checkbox" checked> Show prices in buyers' own currency</label>
+<label class="chk"><input type="checkbox" checked> Allow official resale at face value only</label>
+<label class="chk"><input type="checkbox"> Enable waitlist when sold out</label>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:24px">
+<div class="card" style="background:#0F1B2D;border-color:#0F1B2D;color:#F6F3EC"><div class="lbl" style="color:#8FD3B1">Live preview</div>
+<div class="h" style="font-size:32px;margin:14px 0 6px;line-height:1.1">Rooftop Sessions: December Edition</div>
+<div style="color:#B8C2D1;font-size:14px">20 Dec 2026 · Victoria Island, Lagos</div>
+<div style="border-top:1px dashed #3C4A60;margin:20px 0"></div>
+<div style="display:flex;justify-content:space-between;font-size:14px;color:#B8C2D1"><span>From</span><span style="color:#F6F3EC;font-weight:600">₦10,000</span></div>
+<div style="display:flex;justify-content:space-between;font-size:14px;color:#B8C2D1;margin-top:8px"><span>Total capacity</span><span style="color:#F6F3EC;font-weight:600">530</span></div></div>
+<div class="card"><div class="lbl">Your sales link</div><div class="inp" style="display:flex;align-items:center;margin-top:12px;font-size:14px;color:#5B6472">gatepass.africa/rooftop-sessions</div><a href="#" class="btn btn2" style="margin-top:12px;width:100%;box-sizing:border-box">Copy link</a></div>
+<div class="card"><div class="lbl">Payout</div><div class="mut" style="margin-top:10px">Withdraw your balance at any time once sales begin.</div></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
