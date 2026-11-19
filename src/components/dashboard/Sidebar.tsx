@@ -39,7 +39,9 @@ export function Sidebar() {
       >
         Gatepass
       </Link>
-      <div
+      <nav
+        aria-label="Dashboard"
+        className="dashboard-nav-links"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -69,7 +71,7 @@ export function Sidebar() {
             </Link>
           );
         })}
-      </div>
+      </nav>
     </div>
   );
 }

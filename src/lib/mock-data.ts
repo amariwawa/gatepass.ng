@@ -2,11 +2,11 @@ import { EventDetails } from "./types";
 
 export const SEED_EVENT: EventDetails = {
   slug: "rooftop-sessions",
-  name: "Rooftop Sessions: December Edition",
-  date: "20 Dec 2026",
-  doorsOpen: "6:00 PM",
-  venue: "Victoria Island, Lagos",
-  description: "An evening of live sets and good company above the city.",
+  name: "",
+  date: "",
+  doorsOpen: "",
+  venue: "",
+  description: "",
   category: "Live music · Lagos",
   salesSettings: {
     whatsappAndEmail: true,

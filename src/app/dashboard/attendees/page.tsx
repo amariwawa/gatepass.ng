@@ -155,7 +155,7 @@ export default function AttendeesPage() {
 
       {/* Filter Bar */}
       <div
-        className="card"
+        className="card dashboard-filters"
         style={{
           display: "flex",
           justifyContent: "space-between",
@@ -172,7 +172,7 @@ export default function AttendeesPage() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-        <div style={{ display: "flex", gap: "10px" }}>
+        <div className="dashboard-filter-options" style={{ display: "flex", gap: "10px" }}>
           <button
             type="button"
             onClick={() => setFilter("all")}
@@ -216,7 +216,7 @@ export default function AttendeesPage() {
       </div>
 
       {/* Attendees Table */}
-      <div className="card" style={{ padding: "0", overflow: "hidden" }}>
+      <div className="card responsive-table" style={{ padding: "0", overflow: "hidden" }}>
         <div
           style={{
             display: "grid",

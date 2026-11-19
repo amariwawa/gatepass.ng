@@ -29,10 +29,10 @@ export function LivePreview({
         Live preview
       </div>
       <div className="h" style={{ fontSize: "32px", margin: "14px 0 6px", lineHeight: 1.1 }}>
-        {name || "Rooftop Sessions: December Edition"}
+        {name}
       </div>
       <div style={{ color: "#B8C2D1", fontSize: "14px" }}>
-        {date || "20 Dec 2026"} · {venue || "Victoria Island, Lagos"}
+        {[date, venue].filter(Boolean).join(" · ")}
       </div>
       <div style={{ borderTop: "1px dashed #3C4A60", margin: "20px 0" }} />
       <div

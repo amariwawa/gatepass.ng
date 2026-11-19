@@ -18,11 +18,12 @@ export function EventHeader({
   description,
 }: EventHeaderProps) {
   // If date already includes Saturday/day of week, display directly, otherwise format cleanly
-  const dateDisplay = date.includes(",") ? date : `Saturday, ${date}`;
+  const dateDisplay = date ? (date.includes(",") ? date : `Saturday, ${date}`) : "";
 
   return (
     <div>
       <div
+        className="event-hero"
         style={{
           background: "#0F1B2D",
           color: "#F6F3EC",
@@ -40,9 +41,13 @@ export function EventHeader({
           {name}
         </h1>
         <div style={{ color: "#B8C2D1", fontSize: "16px", lineHeight: 1.7 }}>
-          {dateDisplay}
-          <br />
-          {venue} · Doors {doorsOpen}
+          {dateDisplay && (
+            <>
+              {dateDisplay}
+              <br />
+            </>
+          )}
+          {[venue, doorsOpen && `Doors ${doorsOpen}`].filter(Boolean).join(" · ")}
         </div>
       </div>
       <p

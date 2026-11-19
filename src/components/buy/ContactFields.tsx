@@ -24,6 +24,9 @@ export function ContactFields({
         <input
           id="w"
           className="inp"
+          type="tel"
+          inputMode="tel"
+          autoComplete="tel"
           value={whatsapp}
           onChange={(e) => onWhatsappChange(e.target.value)}
         />
@@ -35,6 +38,9 @@ export function ContactFields({
         <input
           id="e"
           className="inp"
+          type="email"
+          inputMode="email"
+          autoComplete="email"
           placeholder="you@example.com"
           value={email}
           onChange={(e) => onEmailChange(e.target.value)}

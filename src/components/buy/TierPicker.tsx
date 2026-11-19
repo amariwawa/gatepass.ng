@@ -27,7 +27,7 @@ export function TierPicker({
           return (
             <div
               key={tier.id}
-              className="card"
+              className="card ticket-tier"
               style={{
                 display: "flex",
                 justifyContent: "space-between",
@@ -45,7 +45,7 @@ export function TierPicker({
                   {tier.description}
                 </div>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+              <div className="tier-controls" style={{ display: "flex", alignItems: "center", gap: "16px" }}>
                 <span style={{ fontWeight: 600 }}>{formatMoney(tier.price, "NGN")}</span>
                 <button
                   type="button"

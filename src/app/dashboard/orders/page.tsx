@@ -132,7 +132,7 @@ export default function OrdersPage() {
 
       {/* Search and Filters */}
       <div
-        className="card"
+        className="card dashboard-filters"
         style={{
           display: "flex",
           justifyContent: "space-between",
@@ -149,7 +149,7 @@ export default function OrdersPage() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <div style={{ display: "flex", gap: "10px" }}>
+        <div className="dashboard-filter-options" style={{ display: "flex", gap: "10px" }}>
           {["all", "bank_transfer", "card", "apple_pay"].map((m) => (
             <button
               key={m}
@@ -170,7 +170,7 @@ export default function OrdersPage() {
       </div>
 
       {/* Orders Table */}
-      <div className="card" style={{ padding: "0", overflow: "hidden" }}>
+      <div className="card responsive-table" style={{ padding: "0", overflow: "hidden" }}>
         <div
           style={{
             display: "grid",
